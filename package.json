@@ -1,0 +1,47 @@
+{
+  "name": "@pangolinjs/visual-review",
+  "description": "Create issues from an easy to use interface which can be integrated into any website.",
+  "version": "0.1.0",
+  "license": "MIT",
+  "author": {
+    "name": "Fynn Becker",
+    "email": "post@fynn.be"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pangolinjs/visual-review"
+  },
+  "scripts": {
+    "dev": "rollup --config --watch",
+    "build": "rollup --config",
+    "lint": "eslint \"src/**\""
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "browser": "dist/bundle.js",
+  "main": "src/main.js",
+  "dependencies": {
+    "@mdi/js": "^3.9.97",
+    "js-cookie": "^2.2.1",
+    "ky": "^0.11.2",
+    "svelte": "^3.7.1"
+  },
+  "devDependencies": {
+    "eslint": "^6.1.0",
+    "eslint-config-standard": "^13.0.1",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^9.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "eslint-plugin-svelte3": "^2.7.3",
+    "rollup": "^1.19.4",
+    "rollup-plugin-commonjs": "^10.0.2",
+    "rollup-plugin-livereload": "^1.0.1",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-serve": "^1.0.1",
+    "rollup-plugin-svelte": "^5.1.0",
+    "rollup-plugin-terser": "^5.1.1"
+  }
+}
