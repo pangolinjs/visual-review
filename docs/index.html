@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Create issues from an easy to use interface which can be integrated into any website.">
+    <meta name="theme-color" content="#00d1b2">
+
+    <title>Pangolin.js Visual Review</title>
+
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.7.5/css/bulma.min.css">
+  </head>
+  <body>
+    <section class="hero is-primary is-bold">
+
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">Pangolin.js Visual Review</h1>
+          <p class="subtitle">Create issues from an easy to use interface which can be integrated into any website.</p>
+        </div>
+      </div>
+
+      <div class="hero-foot">
+        <div class="tabs is-boxed">
+          <div class="container">
+            <ul>
+              <li class="is-active">
+                <a href="/">Overview</a>
+              </li>
+              <li>
+                <a href="/github.html">GitHub Issues</a>
+              </li>
+              <li>
+                <a href="/gitlab.html">GitLab Issues</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="content">
+          <h2>About</h2>
+          <p><em>Pangolin.js Visual Review</em> is inspired by <a href="https://docs.gitlab.com/ee/ci/review_apps/#visual-reviews-starter">GitLab Visual Reviews</a>. But GitLab’s solution is only available for paid GitLab and I wanted to create something similar which also connects to different backends – currently GitHub and GitLab.</p>
+          <p>Without further ado: What the heck is <em>Pangolin.js Visual Review</em>?</p>
+          <p>It allows the creation of issues directly from any website. Some browser metrics will be attached to the issue body automatically, for example the URL, user agent, and viewport size. The developers don’t have to run around and collect these information and the issue reporters don’t have to learn browser insides.</p>
+          <p>Take a look at the <a href="/github.html">GitHub</a> and <a href="/gitlab.html">GitLab</a> demos. Search for a little button in the bottom right corner 🙂</p>
+
+          <h2>Getting started</h2>
+          <p>Using <em>Pangolin.js Visual Review</em> is as easy as including a <code>script</code> from a CDN in your website:</p>
+
+          <pre><code class="html">&lt;<span class="has-text-danger">script</span>
+  <span class="has-text-info">data-backend-type</span>=<span class="has-text-success">"BACKEND_TYPE"</span>
+  <span class="has-text-info">data-backend-url</span>=<span class="has-text-success">"BACKEND_URL"</span>
+  <span class="has-text-info">data-repository</span>=<span class="has-text-success">"OWNER/NAME"</span>
+  <span class="has-text-info">id</span>=<span class="has-text-success">"pangolinjs-visual-review"</span>
+  <span class="has-text-info">src</span>=<span class="has-text-success">"<a href="http://cdn.jsdelivr.net/npm/@pangolinjs/visual-review" class="has-text-success">http://cdn.jsdelivr.net/npm/@pangolinjs/visual-review</a>"</span>
+  <span class="has-text-info">defer</span>
+&gt;&lt;/<span class="has-text-danger">script</span>&gt;</code></pre>
+
+          <h3>Available backend types</h3>
+
+          <ul>
+            <li><a href="/github.html">GitHub</a></li>
+            <li><a href="/gitlab.html">GitLab</a></li>
+          </ul>
+
+          <h2>Development</h2>
+
+          <p><a href="https://github.com/pangolinjs/visual-review">Pangolin.js Visual Review</a> is developed by <a href="https://fynn.be">Fynn Becker</a> and released under the <a href="https://en.wikipedia.org/wiki/MIT_License">MIT License</a>.</p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

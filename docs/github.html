@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Create issues from an easy to use interface which can be integrated into any website.">
+    <meta name="theme-color" content="#00d1b2">
+
+    <title>GitHub Issues | Pangolin.js Visual Review</title>
+
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+    <script
+      data-backend-type="github"
+      data-backend-url="https://api.github.com"
+      data-repository="mvsde/visual-review-demo-issues"
+      id="pangolinjs-visual-review"
+      src="bundle.min.js"
+      defer
+    ></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.7.5/css/bulma.min.css">
+  </head>
+  <body>
+    <section class="hero is-primary is-bold">
+
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">GitHub Issues</h1>
+          <p class="subtitle">Pangolin.js Visual Review</p>
+        </div>
+      </div>
+
+      <div class="hero-foot">
+        <div class="tabs is-boxed">
+          <div class="container">
+            <ul>
+              <li>
+                <a href="/">Overview</a>
+              </li>
+              <li class="is-active">
+                <a href="/github.html">GitHub Issues</a>
+              </li>
+              <li>
+                <a href="/gitlab.html">GitLab Issues</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="content">
+          <p>Connect <em>Pangolin.js Visual Review</em> with a GitHub repository:</p>
+
+          <pre><code class="html">&lt;<span class="has-text-danger">script</span>
+  <span class="has-text-info">data-backend-type</span>=<span class="has-text-success">"github"</span>
+  <span class="has-text-info">data-backend-url</span>=<span class="has-text-success">"https://api.github.com"</span>
+  <span class="has-text-info">data-repository</span>=<span class="has-text-success">"mvsde/visual-review-demo-issues"</span>
+  <span class="has-text-info">id</span>=<span class="has-text-success">"pangolinjs-visual-review"</span>
+  <span class="has-text-info">src</span>=<span class="has-text-success">"<a href="http://cdn.jsdelivr.net/npm/@pangolinjs/visual-review" class="has-text-success">http://cdn.jsdelivr.net/npm/@pangolinjs/visual-review</a>"</span>
+  <span class="has-text-info">defer</span>
+&gt;&lt;/<span class="has-text-danger">script</span>&gt;</code></pre>
+
+        <p>The issues will be created in <a href="https://github.com/mvsde/visual-review-demo-issues/issues">this demo repository</a>.</p>
+        </div>
+      </div>
+    </section>
+
+  </body>
+</html>

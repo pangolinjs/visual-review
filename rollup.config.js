@@ -32,8 +32,8 @@ export default {
 
     postcss(),
 
-    !production && serve('dist'),
-    !production && livereload('dist'),
+    !production && serve(['dist', 'docs']),
+    !production && livereload(['dist', 'docs']),
 
     production && terser()
   ]

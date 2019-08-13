@@ -15,12 +15,13 @@
   "scripts": {
     "dev": "rollup --config --watch",
     "build": "rollup --config",
+    "docs": "npm run build && cp dist/* docs",
     "lint": "eslint \"src/**\"",
     "prepack": "npm run build",
     "release": "standard-version"
   },
   "files": [
-    "dist/bundle.*",
+    "dist",
     "src"
   ],
   "browser": "dist/bundle.min.js",
