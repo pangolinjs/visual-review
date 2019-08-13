@@ -12,6 +12,13 @@
     "type": "git",
     "url": "https://github.com/pangolinjs/visual-review"
   },
+  "keywords": [
+    "issues",
+    "github",
+    "gitlab",
+    "visual",
+    "review"
+  ],
   "scripts": {
     "dev": "rollup --config --watch",
     "build": "rollup --config",
