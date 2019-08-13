@@ -23,6 +23,7 @@ const transitionOptions = { x: 50, duration: 300, easing: cubicInOut }
   padding: 1rem;
   z-index: 1000;
 
+  background: rgb(255, 255, 255);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 3px;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
