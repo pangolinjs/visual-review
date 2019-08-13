@@ -11,8 +11,8 @@ export default {
   input: 'src/main.js',
 
   output: {
-    name: 'visualReview',
-    file: 'dist/bundle.js',
+    name: 'PangolinVisualReview',
+    file: 'dist/bundle.min.js',
     format: 'iife',
     sourcemap: true
   },

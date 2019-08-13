@@ -20,10 +20,10 @@
     "release": "standard-version"
   },
   "files": [
-    "dist",
+    "dist/bundle.*",
     "src"
   ],
-  "browser": "dist/bundle.js",
+  "browser": "dist/bundle.min.js",
   "main": "src/main.js",
   "dependencies": {
     "@mdi/js": "^3.9.97",
