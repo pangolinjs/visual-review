@@ -12,8 +12,8 @@ function toggleOpen () {
 <style>
 .vr-toggle {
   position: fixed;
-  bottom: 1rem;
-  right: 1rem;
+  bottom: 1em;
+  right: 1em;
   z-index: 1001;
 }
 </style>

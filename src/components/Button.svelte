@@ -16,10 +16,10 @@ function handleClick (event) {
 
   display: inline-flex;
   align-items: center;
-  padding: 0.5rem;
+  padding: 0.5em;
 
   font-family: inherit;
-  font-size: 1rem;
+  font-size: 1em;
   line-height: inherit;
   color: inherit;
 

@@ -16,12 +16,12 @@ const transitionOptions = { x: 50, duration: 300, easing: cubicInOut }
   box-sizing: border-box;
 
   position: fixed;
-  width: 30rem;
-  max-width: calc(100vw - 2rem);
-  max-height: calc(100vh - 5.25rem);
-  right: 1rem;
-  bottom: 4.25rem;
-  padding: 1rem;
+  width: 30em;
+  max-width: calc(100vw - 2em);
+  max-height: calc(100vh - 5.25em);
+  right: 1em;
+  bottom: 4.25em;
+  padding: 1em;
   overflow-y: auto;
   z-index: 1000;
 

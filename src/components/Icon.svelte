@@ -9,10 +9,10 @@ import {
 
 const types = {
   add: mdiPlusCircle,
-  'arrow-left': mdiArrowLeftCircle,
-  'arrow-right': mdiArrowRightCircle,
   close: mdiCloseCircle,
-  feedback: mdiMessageAlert
+  feedback: mdiMessageAlert,
+  left: mdiArrowLeftCircle,
+  right: mdiArrowRightCircle
 }
 
 export let type
@@ -23,22 +23,18 @@ export let right = false
 
 <style>
 .vr-icon {
-  display: inline-block;
   width: 1em;
   height: 1em;
-  vertical-align: middle;
 
   fill: currentColor;
 }
 
 .vr-icon.is-left {
-  margin-left: -0.125em;
-  margin-right: 0.25em;
+  margin: 0 0.25em 0 -0.125em;
 }
 
 .vr-icon.is-right {
-  margin-left: 0.25em;
-  margin-right: -0.125em;
+  margin: 0 -0.125em 0 0.25em;
 }
 </style>
 

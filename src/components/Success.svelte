@@ -11,7 +11,6 @@ function newIssue () {
 </script>
 
 <Title>Success</Title>
-
 <p>Thanks for the feedback. Your issue has been created at <a href={$response.url} target="_blank">{$response.url}</a>.</p>
 
 <Button on:click={newIssue}>

@@ -37,7 +37,7 @@ function handleSubmit () {
 
   <Footer justify="flex-end">
     <Button type="submit">
-      Continue <Icon type="arrow-right" right />
+      Continue <Icon type="right" right />
     </Button>
   </Footer>
 </form>

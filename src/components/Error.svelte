@@ -7,8 +7,8 @@ export let detail
 
 <style>
 .vr-error {
-  margin-bottom: 1rem;
-  padding: 1rem;
+  margin-bottom: 1em;
+  padding: 1em;
 
   color: rgb(255, 255, 255);
 

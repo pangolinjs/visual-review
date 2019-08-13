@@ -18,12 +18,12 @@ function handleAutofocus (node) {
 
 <style>
 .vr-input {
-  margin-bottom: 1rem;
+  margin-bottom: 1em;
 }
 
 .vr-input__label {
   display: inline-block;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.25em;
   cursor: pointer;
 }
 
@@ -32,9 +32,9 @@ function handleAutofocus (node) {
 
   display: block;
   width: 100%;
-  padding: 0.5rem;
+  padding: 0.5em;
 
-  font-size: 1rem;
+  font-size: inherit;
   font-family: inherit;
   line-height: inherit;
 

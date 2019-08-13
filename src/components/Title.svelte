@@ -1,8 +1,8 @@
 <style>
 .vr-title {
-  margin: 0 0 1rem;
+  margin: 0 0 1em;
 
-  font-size: 1.25rem;
+  font-size: 1.25em;
   font-family: inherit;
 }
 </style>
