@@ -1,6 +1,7 @@
 import { terser } from 'rollup-plugin-terser'
 import commonjs from 'rollup-plugin-commonjs'
 import livereload from 'rollup-plugin-livereload'
+import postcss from 'rollup-plugin-postcss'
 import resolve from 'rollup-plugin-node-resolve'
 import serve from 'rollup-plugin-serve'
 import svelte from 'rollup-plugin-svelte'
@@ -19,7 +20,8 @@ export default {
 
   plugins: [
     svelte({
-      dev: !production
+      dev: !production,
+      emitCss: true
     }),
 
     resolve({
@@ -27,6 +29,8 @@ export default {
       dedupe: importee => importee === 'svelte' || importee.startsWith('svelte/')
     }),
     commonjs(),
+
+    postcss(),
 
     !production && serve('dist'),
     !production && livereload('dist'),
