@@ -41,6 +41,4 @@ function handleClick (event) {
   class="vr-button"
   on:click={handleClick}
   {type}
->
-  <slot />
-</button>
+><slot /></button>

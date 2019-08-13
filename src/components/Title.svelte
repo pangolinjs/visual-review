@@ -7,6 +7,4 @@
 }
 </style>
 
-<h3 class="vr-title">
-  <slot />
-</h3>
+<h3 class="vr-title"><slot /></h3>

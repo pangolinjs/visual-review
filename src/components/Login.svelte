@@ -91,13 +91,10 @@ async function handleSubmit () {
 
   <Footer justify="space-between">
     <Button on:click={editIssue}>
-      <Icon type="arrow-left" left />
-      Edit issue
+      <Icon type="arrow-left" left /> Edit issue
     </Button>
-
     <Button type="submit">
-      Login and create issue
-      <Icon type="arrow-right" right />
+      Login and create issue <Icon type="arrow-right" right />
     </Button>
   </Footer>
 </form>

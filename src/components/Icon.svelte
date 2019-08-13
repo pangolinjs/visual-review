@@ -48,6 +48,4 @@ export let right = false
   class:is-right={right}
   style="font-size: {size}em"
   viewBox="0 0 24 24"
->
-  <path d={types[type]} />
-</svg>
+><path d={types[type]} /></svg>

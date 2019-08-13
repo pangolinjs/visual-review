@@ -12,12 +12,8 @@ function newIssue () {
 
 <Title>Success</Title>
 
-<p>
-  Thanks for the feedback. Your issue has been created at
-  <a href={$response.url} target="_blank">{$response.url}</a>.
-</p>
+<p>Thanks for the feedback. Your issue has been created at <a href={$response.url} target="_blank">{$response.url}</a>.</p>
 
 <Button on:click={newIssue}>
-  <Icon type="add" left />
-  New issue
+  <Icon type="add" left /> New issue
 </Button>

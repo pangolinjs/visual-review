@@ -66,7 +66,6 @@ function handleAutofocus (node) {
         {required}
       >
     {/if}
-
     {label}
   </label>
 
