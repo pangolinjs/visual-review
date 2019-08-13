@@ -3,6 +3,7 @@
   "description": "Create issues from an easy to use interface which can be integrated into any website.",
   "version": "0.1.0",
   "license": "MIT",
+  "homepage": "https://visual-review.pangolinjs.org",
   "author": {
     "name": "Fynn Becker",
     "email": "post@fynn.be"
@@ -14,7 +15,9 @@
   "scripts": {
     "dev": "rollup --config --watch",
     "build": "rollup --config",
-    "lint": "eslint \"src/**\""
+    "lint": "eslint \"src/**\"",
+    "prepack": "npm run build",
+    "release": "standard-version"
   },
   "files": [
     "dist",
@@ -42,6 +45,7 @@
     "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-serve": "^1.0.1",
     "rollup-plugin-svelte": "^5.1.0",
-    "rollup-plugin-terser": "^5.1.1"
+    "rollup-plugin-terser": "^5.1.1",
+    "standard-version": "^7.0.0"
   }
 }
