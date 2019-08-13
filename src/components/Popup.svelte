@@ -18,9 +18,11 @@ const transitionOptions = { x: 50, duration: 300, easing: cubicInOut }
   position: fixed;
   width: 30rem;
   max-width: calc(100vw - 2rem);
+  max-height: calc(100vh - 5.25rem);
   right: 1rem;
   bottom: 4.25rem;
   padding: 1rem;
+  overflow-y: auto;
   z-index: 1000;
 
   background: rgb(255, 255, 255);
