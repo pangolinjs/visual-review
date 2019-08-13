@@ -23,7 +23,7 @@ function handleClick (event) {
   line-height: inherit;
   color: inherit;
 
-  background: rgba(0, 0, 0, 0.1);
+  background: rgb(230, 230, 230);
   border: 1px solid rgba(0, 0, 0, 0.02);
   border-radius: 3px;
 
@@ -32,7 +32,7 @@ function handleClick (event) {
 
 .vr-button:hover,
 .vr-button:focus {
-  background: rgba(0, 0, 0, 0.2);
+  background: rgb(210, 210, 210);
   border-color: rgba(0, 0, 0, 0.05);
 }
 </style>
