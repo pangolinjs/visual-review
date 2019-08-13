@@ -1,14 +1,14 @@
 import { get } from 'svelte/store'
-import ky from 'ky'
-import config from './config'
-import browserMetrics from './utils/browserMetrics'
-import requestHeaders from './utils/requestHeaders'
 import { title, comment } from './store'
+import browserMetrics from './utils/browserMetrics'
+import config from './config'
+import headers from './utils/headers'
+import ky from 'ky'
 
 const api = ky.create({
   prefixUrl: config.backendUrl,
   hooks: {
-    beforeRequest: [requestHeaders]
+    beforeRequest: [headers]
   }
 })
 

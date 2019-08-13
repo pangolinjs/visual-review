@@ -1,3 +1,7 @@
+/**
+ * Collect browser metrics and format as markdown
+ * @returns {String} Browser metrics
+ */
 export default function () {
   return `
 

@@ -5,6 +5,7 @@ import Toggle from './components/Toggle.svelte'
 
 <style>
 .vr-app {
+  font-size: 1rem;
   font-family: system-ui, 'Open Sans', 'Helvetica Neue', 'Arial', sans-serif;
   color: rgb(20, 20, 20);
 }
