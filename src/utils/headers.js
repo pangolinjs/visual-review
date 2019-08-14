@@ -1,4 +1,5 @@
 import { get } from 'svelte/store'
+
 import { username, token } from '../store'
 import config from '../config'
 

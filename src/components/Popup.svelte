@@ -3,8 +3,8 @@ import Issue from './Issue.svelte'
 import Login from './Login.svelte'
 import Success from './Success.svelte'
 
-import { fly } from 'svelte/transition'
 import { cubicInOut } from 'svelte/easing'
+import { fly } from 'svelte/transition'
 
 import { open, route } from '../store'
 
