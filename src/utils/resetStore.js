@@ -1,4 +1,4 @@
-import { title, comment } from '../store'
+import { title, comment, screenshot } from '../store'
 
 /**
  * Reset store
@@ -6,4 +6,5 @@ import { title, comment } from '../store'
 export default function () {
   title.set('')
   comment.set('')
+  screenshot.set(null)
 }

@@ -23,16 +23,7 @@ function editIssue () {
 
 async function handleSubmit () {
   try {
-    const body = await api.createIssue().json()
-
-    if (config.backendType === 'github') {
-      response.set({ url: body.html_url })
-    }
-
-    if (config.backendType === 'gitlab') {
-      response.set({ url: body.web_url })
-    }
-
+    response.set(await api.createIssue())
     route.set('success')
     resetStore()
   } catch (error) {
@@ -72,7 +63,7 @@ async function handleSubmit () {
     id="vr-token"
     label="Token"
     bind:value={$token}
-    autofocus={config.backendType !== 'github'}
+    autofocus={config.backendType === 'gitlab'}
     required
   />
 

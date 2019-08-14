@@ -1,9 +1,19 @@
 /**
  * Collect browser metrics and format as markdown
+ * @param {Object} options Options
+ * @param {String} [options.screenshot] Screenshot URL
  * @returns {String} Browser metrics
  */
-export default function () {
-  return `
+export default function (options = {}) {
+  const screenshot = options.screenshot
+    ? `
+
+## Screenshot
+
+![Screenshot](${options.screenshot})`
+    : ''
+
+  return screenshot + `
 
 ## Browser metrics
 
