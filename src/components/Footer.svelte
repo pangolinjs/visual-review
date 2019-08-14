@@ -5,6 +5,7 @@ export let justify = 'flex-start'
 <style>
 .vr-footer {
   display: flex;
+  margin-top: 1em;
 }
 </style>
 
