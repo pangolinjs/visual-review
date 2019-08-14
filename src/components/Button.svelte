@@ -1,13 +1,5 @@
 <script>
-import { createEventDispatcher } from 'svelte'
-
-const dispatch = createEventDispatcher()
-
 export let type = 'button'
-
-function handleClick (event) {
-  dispatch('click', event)
-}
 </script>
 
 <style>
@@ -39,6 +31,6 @@ function handleClick (event) {
 
 <button
   class="vr-button"
-  on:click={handleClick}
+  on:click
   {type}
 ><slot /></button>

@@ -62,6 +62,7 @@ function handleAutofocus (node) {
         type="checkbox"
         bind:checked
         use:handleAutofocus
+        on:change
         {id}
         {required}
       >
