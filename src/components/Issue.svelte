@@ -80,7 +80,7 @@ onMount(() => {
     />
 
     {#if screenshotPreview}
-      <div transition:slide={{ easing: cubicInOut }}>
+      <div transition:slide={{ duration: 600, easing: cubicInOut }}>
         <Screenshot src={screenshotPreview} />
       </div>
     {/if}
