@@ -6,7 +6,7 @@ const COOKIE_KEY = 'pangolinjs-visual-review-login'
  * Save login cookie
  */
 function save (username, token) {
-  cookie.set(COOKIE_KEY, { username, token })
+  cookie.set(COOKIE_KEY, { username, token }, { expires: 365 })
 }
 
 /**
