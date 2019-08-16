@@ -11,6 +11,8 @@ import config from '../config'
 import { route, username, token, rememberMe, response } from '../store'
 import resetStore from '../utils/resetStore'
 
+let isRequesting = false
+
 const requestError = {
   status: 0,
   statusText: '',
@@ -22,7 +24,12 @@ function editIssue () {
 }
 
 async function handleSubmit () {
+  if (isRequesting) {
+    return
+  }
+
   try {
+    isRequesting = true
     response.set(await api.createIssue())
     route.set('success')
     resetStore()
@@ -40,6 +47,8 @@ async function handleSubmit () {
     if (config.backendType === 'gitlab') {
       requestError.message = body.error_description
     }
+  } finally {
+    isRequesting = false
   }
 }
 </script>
@@ -86,7 +95,7 @@ async function handleSubmit () {
       <Icon type="left" left /> Edit issue
     </Button>
     <Button type="submit">
-      Create issue <Icon type="right" right />
+      Create issue <Icon type={isRequesting ? 'loading' : 'right'} rotate={isRequesting} right />
     </Button>
   </Footer>
 </form>
