@@ -1,18 +1,18 @@
-name: Lint and Test
+name: Continuous Integration
 on: [push]
 
 jobs:
 
   lint:
-    name: Linting
-    runs-on: ubuntu-18.04
+    name: Lint
+    runs-on: ubuntu-latest
     steps:
       - name: Check out repository
-        uses: actions/checkout@v1
+        uses: actions/checkout@master
       - name: Set up Node.js
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@master
         with:
-          version: 12
+          node-version: 13
       - name: Install dependencies
         run: npm ci
       - name: Lint JavaScript
