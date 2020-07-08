@@ -1,7 +1,7 @@
 {
   "name": "@pangolinjs/visual-review",
   "description": "Create issues from an easy to use interface which can be integrated into any website.",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "license": "MIT",
   "homepage": "https://visual-review.pangolinjs.org",
   "author": {

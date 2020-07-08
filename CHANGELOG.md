@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.3.0](https://github.com/pangolinjs/visual-review/compare/v0.2.0...v0.3.0) (2020-07-08)
+
+
+### Features
+
+* Show loading indicator during issue POST (Close [#4](https://github.com/pangolinjs/visual-review/issues/4)) ([eb3020a](https://github.com/pangolinjs/visual-review/commit/eb3020a81de88c2c79a1a47dff84d0628272b928))
+
+
+### Bug Fixes
+
+* Improve screenshot sliding performance ([bec57f2](https://github.com/pangolinjs/visual-review/commit/bec57f206aace274292b6e5a15525f149aa9bddb))
+* Make login cookie more persistent ([5f87a2b](https://github.com/pangolinjs/visual-review/commit/5f87a2b3eaf7b0f3a758a34b2b05276ce8e50ef4))
+
 ## [0.2.0](https://github.com/pangolinjs/visual-review/compare/v0.1.1...v0.2.0) (2019-08-14)
 
 
