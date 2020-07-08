@@ -13,7 +13,8 @@ function save (username, token) {
  * Read login cookie
  */
 function read () {
-  return cookie.getJSON(COOKIE_KEY) || {}
+  const content = cookie.get(COOKIE_KEY)
+  return content ? JSON.parse(content) : {}
 }
 
 /**

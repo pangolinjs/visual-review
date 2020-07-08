@@ -6,7 +6,7 @@
   "homepage": "https://visual-review.pangolinjs.org",
   "author": {
     "name": "Fynn Becker",
-    "email": "post@fynn.be"
+    "email": "fynn@hey.com"
   },
   "repository": {
     "type": "git",
@@ -34,28 +34,28 @@
   "browser": "dist/bundle.min.js",
   "main": "src/main.js",
   "dependencies": {
-    "@mdi/js": "^5.0.45",
-    "js-cookie": "^2.2.1",
-    "ky": "^0.19.0",
-    "svelte": "^3.19.2"
+    "@mdi/js": "^5.3.45",
+    "js-cookie": "^3.0.0-rc.0",
+    "ky": "^0.20.0",
+    "svelte": "^3.24.0"
   },
   "devDependencies": {
     "cssnano": "^4.1.10",
-    "eslint": "^6.8.0",
-    "eslint-config-standard": "^14.1.0",
-    "eslint-plugin-import": "^2.20.1",
-    "eslint-plugin-node": "^11.0.0",
+    "eslint": "^7.4.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1",
     "eslint-plugin-svelte3": "^2.7.3",
-    "rollup": "^1.32.1",
+    "rollup": "^2.21.0",
     "rollup-plugin-commonjs": "^10.1.0",
-    "rollup-plugin-livereload": "^1.0.4",
+    "rollup-plugin-livereload": "^1.3.0",
     "rollup-plugin-node-resolve": "^5.2.0",
-    "rollup-plugin-postcss": "^2.4.1",
-    "rollup-plugin-serve": "^1.0.1",
-    "rollup-plugin-svelte": "^5.1.1",
-    "rollup-plugin-terser": "^5.3.0",
-    "standard-version": "^7.1.0"
+    "rollup-plugin-postcss": "^3.1.2",
+    "rollup-plugin-serve": "^2.0.0-beta.0",
+    "rollup-plugin-svelte": "^5.2.3",
+    "rollup-plugin-terser": "^6.1.0",
+    "standard-version": "^8.0.0"
   }
 }
